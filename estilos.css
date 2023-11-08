@@ -1,0 +1,55 @@
+.carousel {
+  position: relative;
+  max-width: 50%; /* Ajusta esto según la anchura deseada del carrusel */
+  margin-left: auto; /* Centra el carrusel horizontalmente */
+  margin-right: auto; /* Centra el carrusel horizontalmente */
+  margin-top: 30px; /* Espacio por encima del carrusel */
+  overflow: hidden; /* Oculta el desbordamiento para no mostrar la barra de desplazamiento */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+
+.carousel-window {
+  display: flex;
+  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+.carousel-images {
+  display: flex;
+}
+
+.carousel-images img {
+  max-width: 100%; /* Establece el ancho máximo de las imágenes */
+  flex: 0 0 auto; /* Esto evita que las imágenes se estiren o encojan */
+  margin-right: 10px; /* Espacio entre imágenes */
+}
+
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  z-index: 2;
+}
+
+.carousel .prev:hover,
+.carousel .next:hover {
+  background-color: #555;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
